@@ -1,0 +1,44 @@
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+@import '../app/landingpage/landingpage/landingpage.component-theme.scss';
+@import '../app/phonepal/components/profile/profile.component-theme.scss';
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$sampleLandingPage-app-primary: mat-palette($mat-deep-purple, 500);
+$sampleLandingPage-app-accent : mat-palette($mat-deep-purple, 800, A100, A400);
+// The warn palette is optional (defaults to red).
+$sampleLandingPage-app-warn : mat-palette($mat-red);
+// Create the theme object (a Sass map containing all of the palettes).
+$sampleLandingPage-app-theme: mat-light-theme($sampleLandingPage-app-primary, $sampleLandingPage-app-accent, $sampleLandingPage-app-warn);
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+$sample-app-primary: mat-palette($mat-indigo, 50);
+$sample-app-accent : mat-palette($mat-indigo, 900, A100, A400);
+// The warn palette is optional (defaults to red).
+$sample-app-warn : mat-palette($mat-red);
+// Create the theme object (a Sass map containing all of the palettes).
+$sample-app-theme: mat-dark-theme($sample-app-primary, $sample-app-accent, $sample-app-warn);
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+.landingpageTheme {
+    @include angular-material-theme($sampleLandingPage-app-theme);
+}
+
+.landingpageowncomponentsTheme {
+    @include landingpage-theme($sampleLandingPage-app-theme)
+}
+
+.sampleapptheme {
+    @include angular-material-theme($sample-app-theme);
+}
+
+.profilepagetheme {
+    @include profilepage-theme($sample-app-theme)
+}

@@ -1,0 +1,180 @@
+<div class="container-fluid">
+  <div [class]="theme">
+    <div class="row">
+      <div class="col-md-12  no-padding-left no-padding-right">
+        <mat-toolbar color="primary" class="tool-bar" [ngClass]="{'shrink-toolbar': shrinkToolbar}">
+          <mat-toolbar-row>
+            <div class="col-md-8 col-xs-6 col-md-offset-1">
+              <span><img class="logo" [src]="shrinkToolbar?imageUrl_dark:imageUrl" alt=""></span>
+            </div>
+            <div class="col-md-3 col-xs-6 text-center">
+              <button mat-stroked-button (click)="openDialog()">Enroll Me</button>
+            </div>
+          </mat-toolbar-row>
+        </mat-toolbar>
+      </div>
+    </div>
+  </div>
+  <div [class]="owntheme">
+    <div class="row">
+      <div class="col-md-12 no-padding-left no-padding-right div-bgcolor">
+        <div>
+          <div class="col-md-12 col-xs-12 text-center">
+            <div class="appTitle">sample</div>
+          </div>
+          <div class="col-md-12 col-xs-12 text-center">
+            <div>short note</div>
+          </div>
+          <div class="col-md-12 text-center">
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/bK4uahYmwkc?controls=0" frameborder="0" allow="autoplay; encrypted-media"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div [class]="owntheme">
+  <div class="row no-margin-left no-margin-right">
+    <div class="col-md-12 no-padding-left no-padding-right">
+      <div class="row tool-bar" id="facts-toolbar">
+        <div class="col-md-offset-3 col-xs-4 col-md-2">
+          <div class="row">
+            <div class="col-md-12 text-center" style="margin-top:1vh">
+              <h1>400+</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center sub-text">
+              phone pals
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-xs-4">
+          <div class="row">
+            <div class="col-md-12 text-center" style="margin-top:1vh">
+             <h1> 250,000+</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center sub-text">
+              Minutes
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-xs-4">
+          <div class="row">
+            <div class="col-md-12 text-center" style="margin-top:1vh">
+              <h1>3000+</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center sub-text">
+              Engaged Members
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div [class]="theme">
+  <div class="row card-row">
+    <div style="margin:14vh">
+      <div class="col-md-3 col-xs-12 text-center">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <mat-card-title>
+              <h2>card 1</h2>
+            </mat-card-title>
+            <mat-card-subtitle>subtitle</mat-card-subtitle>
+          </mat-card-header>
+
+          <mat-card-content>
+            <p>
+              About card 1
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="col-md-3 col-xs-12 text-center">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <mat-card-title>
+              <h2>card2</h2>
+            </mat-card-title>
+            <mat-card-subtitle>subtitle</mat-card-subtitle>
+          </mat-card-header>
+
+          <mat-card-content>
+            <p>
+              About card 2
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="col-md-3 col-xs-12 text-center">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <mat-card-title>
+              <h2>card 3</h2>
+            </mat-card-title>
+            <mat-card-subtitle>subtitle</mat-card-subtitle>
+          </mat-card-header>
+
+          <mat-card-content>
+            <p>
+              About card 3
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="col-md-3 col-xs-12 text-center">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <mat-card-title color="primary">
+              <h2>card 4</h2>
+            </mat-card-title>
+            <mat-card-subtitle>subtitle</mat-card-subtitle>
+          </mat-card-header>
+
+          <mat-card-content>
+            <p>
+              About card 4
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
+  <div [class]="theme">
+  <div class="row">
+    <div class="col-md-12 col-xs-12 no-padding-left no-padding-right">
+      <mat-toolbar class="div-height-footer">
+        <mat-toolbar-row>
+          <div class="col-md-12 ">
+            <hr>
+          </div>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+          <div class="col-md-9 copyright">
+            © 2018, careMore Health Plan
+          </div>
+          <div class="col-md-1 no-padding-left no-padding-right text-center">
+            <img src="../../../assets/images/twitter-box.png" alt="">
+          </div>
+          <div class="col-md-1 no-padding-left no-padding-right text-center">
+            <img src="../../../assets/images/instagram.png" alt="">
+          </div>
+          <div class="col-md-1 no-padding-left no-padding-right text-center">
+            <img src="../../../assets/images/facebook-box.png" alt="">
+          </div>
+          <div class="col-md-1 no-padding-left no-padding-right text-center">
+            <img src="../../../assets/images/linkedin-box.png" alt="">
+          </div>
+        </mat-toolbar-row>
+      </mat-toolbar>
+    </div>
+  </div>
+</div>
+</div>
