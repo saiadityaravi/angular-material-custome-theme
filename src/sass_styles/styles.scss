@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+
+/** 
+* Include the Global Styles
+*/
+
+// Importing the prebuilt theme for the Angular Material can add custom themes too
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+// Importing the style variables 
+@import "./_variables.scss";
+@import "./_mixins.scss";
+@import "./_customTheme.scss";
+body {
+    color: $font-color;
+    font-size: $font-size-base;
+    font-family: $app-font-stack;
+    font-weight: $font-weight-regular;
+    height: 100vh;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    color: $font-color-h2;
+    font-size: 24px;
+    font-weight: $font-weight-medium;
+}
+
+h2 {
+    color: $font-color-h2;
+    font-size: 18px;
+    font-weight: $font-weight-medium;
+}
+
+h3 {
+    color: $font-color;
+    font-size: 16px;
+    font-weight: $font-weight-light;
+}
+
+label {
+    font-size: $font-size-base - 2;
+}
+
+.mat-input-element {
+    font-size: .9em !important;
+}
+
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .col-xs-12 {
+        width: 100%
+    }
+}
+
+.mat-form-field-infix {
+    width: 100% !important;
+}
+
+.mat-form-field-label {
+    color: black !important;
+}
+
+.bs-datepicker-body table td span.disabled,
+.bs-datepicker-body table td.disabled span {
+    color: #d7dadc !important;
+}
